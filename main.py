@@ -1,4 +1,5 @@
 from models.cart import Cart
+from models.costumer import Costumer
 from models.item import Item
 
 
@@ -15,5 +16,8 @@ cart.add_item(shrimp)
 cart.add_item(filet_mignon)
 cart.remove_item(banana)
 
-print(cart)
+erik = Costumer("Erik", 100, 'erik@email.com')
+
+erik.buy(cart)
+
 
